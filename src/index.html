@@ -3,14 +3,97 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="favicon.svg" type="image/svg">
+	<link rel="shortcut icon" href="/favicon.svg" type="image/svg">
 	<link rel="stylesheet" href="./styles/style.scss">
 	<link rel="stylesheet" href="./assets/fonts/poppins/style.css">
 	<title>vladislav kotelnikov</title>
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="vladislav kotelnikov | web developer">
+	<meta property="og:description" content="Профессиональный веб-разработчик, специализирующийся на полном цикле разработки интерфейсов для браузеров">
+	<meta property="og:url" content="https://vnkot.ru">
+	<meta property="og:image" content="/cover">
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function(m, e, t, r, i, k, a) {
+			m[i] = m[i] || function() {
+				(m[i].a = m[i].a || []).push(arguments);
+			};
+			m[i].l = 1 * new Date();
+			for (var j = 0; j < document.scripts.length; j++) {
+				if (document.scripts[j].src === r) {
+					return;
+				}
+			}
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
+		})
+		(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+		ym(98726161, 'init', {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+		});
+	</script>
 </head>
 <body>
-<div class="wrapper">
-</div>
+<main class="wrapper">
+	<div class="profile">
+		<div class="profile__avatar">
+			<div class="image image--light">
+				<img src="./assets/images/avatar-light.png" alt="Фотография разработчика">
+			</div>
+			<div class="image image--dark">
+				<img src="./assets/images/avatar-dark.png" alt="Фотография разработчика">
+			</div>
+		</div>
+
+		<div class="profile__content">
+			<div class="profile__info">
+				<h1 class="title">vlad kotelnikov</h1>
+
+				<p class="profile__description">web developer</p>
+
+				<div class="profile__location location">
+					<div class="location__icon">
+						<svg width="24px" height="24px" viewBox="0 0 24 24">
+							<path
+								d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+								stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+								stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+					<p class="location__text">kirov, ru</p>
+				</div>
+			</div>
+
+			<div class="profile__soc">
+				<a class="soc-link" href="mailto:vlad.kotelnikov1100@mail.ru">
+					<svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+						<path
+							d="M3 8L8.44992 11.6333C9.73295 12.4886 10.3745 12.9163 11.0678 13.0825C11.6806 13.2293 12.3194 13.2293 12.9322 13.0825C13.6255 12.9163 14.2671 12.4886 15.5501 11.6333L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+							stroke="var(--icon-color)" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+				<a class="soc-link" href="https://t.me/manulovicm">
+					<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M3.13399 11.6415C3.13399 11.6415 11.3162 8.29372 14.154 7.11497C15.2417 6.64347 18.9309 5.1346 18.9309 5.1346C18.9309 5.1346 20.6335 4.4746 20.4916 6.0776C20.4442 6.73772 20.0659 9.0481 19.6875 11.5471C19.12 15.0835 18.5051 18.9497 18.5051 18.9497C18.5051 18.9497 18.4106 20.0342 17.6066 20.2228C16.8025 20.4115 15.4782 19.5627 15.2417 19.3741C15.0526 19.2326 11.6946 17.1108 10.465 16.0736C10.1339 15.7907 9.75549 15.2248 10.5122 14.5647C12.2149 13.0088 14.2486 11.0756 15.4782 9.84972C16.0457 9.28385 16.6134 7.9636 14.2486 9.56672C10.8906 11.8771 7.57986 14.0461 7.57986 14.0461C7.57986 14.0461 6.82324 14.5176 5.40436 14.0932C3.98549 13.6688 2.33011 13.1031 2.33011 13.1031C2.33011 13.1031 1.19511 12.3957 3.13424 11.6415H3.13399Z"
+							stroke="var(--icon-color)" />
+					</svg>
+				</a>
+				<a class="soc-link" href="https://vk.com/vladislavnaverno">
+					<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12.3573 18.0373C5.86133 18.0373 2.15467 13.52 2 6H5.25333C5.36 11.52 7.76 13.856 9.66133 14.3387V6H12.728V10.76C14.6027 10.5547 16.576 8.38667 17.24 6H20.3093C19.7973 8.93867 17.6587 11.1093 16.1387 12C17.6587 12.7227 20.0933 14.6133 21.0187 18.0373H17.648C16.9227 15.7493 15.1147 13.976 12.7307 13.736V18.0373H12.3573Z"
+							stroke="var(--icon-color)" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</main>
 <script src="./scripts/main.ts"></script>
 </body>
 </html>
