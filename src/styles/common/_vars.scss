@@ -1,0 +1,22 @@
+:root {
+	--title-color: #fff;
+	--text-color: #676767;
+
+	--main-bg-color: #C9C9C9;
+
+	--icon-color: #fff;
+	--btn-bg-color: #0A0A0A;
+
+	--inner-shadow: inset 0 5px 5px 0 rgba(255, 255, 255, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--title-color: #0A0A0A;
+
+		--main-bg-color: #000000;
+
+		--icon-color: #000;
+		--btn-bg-color: #fff;
+	}
+}

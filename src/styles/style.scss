@@ -1,1 +1,15 @@
-@import "reset";
+@import "common/reset";
+@import "common/vars";
+
+html {
+	font-size: 8px; // для rem размеров
+}
+
+.wrapper {
+	min-height: 100vh;
+	background-color: var(--main-bg-color);
+
+	font-family: 'Poppins';
+	font-size: 3rem;
+	color: var(--text-color);
+}
