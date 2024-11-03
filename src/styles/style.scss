@@ -13,6 +13,8 @@
 }
 
 .profile {
+	max-width: 368px;
+
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -24,6 +26,7 @@
 	box-shadow: var(--inner-shadow);
 	border: 1px solid var(--card-border-color);
 	background-color: var(--card-bg-color);
+	//background-color: #0b0b0b;
 
 	&__avatar {
 		width: 100%;
