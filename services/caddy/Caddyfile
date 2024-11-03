@@ -1,0 +1,11 @@
+манулович.рф {
+    reverse_proxy https://vnkot.ru 301
+}
+
+manulovich.ru {
+    reverse_proxy https://vnkot.ru 301
+}
+
+vnkot.ru {
+    reverse_proxy client:3000
+}

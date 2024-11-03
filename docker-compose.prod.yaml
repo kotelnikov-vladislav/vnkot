@@ -1,0 +1,33 @@
+services:
+  caddy:
+    image: caddy
+    volumes:
+      - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    depends_on:
+      - client
+    restart: always
+    networks:
+      - internal_network
+
+  client:
+    build:
+      context: .
+      dockerfile: services/docker/Dockerfile
+    ports:
+      - "3000:3000"
+    restart: always
+    networks:
+      - internal_network
+
+volumes:
+  caddy_data:
+  caddy_config:
+
+networks:
+  internal_network:
