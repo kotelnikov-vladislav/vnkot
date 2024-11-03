@@ -1,0 +1,10 @@
+services:
+  client:
+    build:
+      context: .
+      dockerfile: services/docker/Dockerfile.dev
+    ports:
+      - "3000:5173"
+    restart: always
+    volumes:
+      - .:/app
