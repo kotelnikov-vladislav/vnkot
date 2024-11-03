@@ -1,9 +1,9 @@
 манулович.рф {
-    reverse_proxy https://vnkot.ru 301
+    reverse_proxy https://vnkot.ru
 }
 
 manulovich.ru {
-    reverse_proxy https://vnkot.ru 301
+    reverse_proxy https://vnkot.ru
 }
 
 vnkot.ru {
